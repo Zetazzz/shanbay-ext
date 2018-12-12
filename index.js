@@ -1,6 +1,6 @@
 const puppeteer = require('puppeteer');
 
-//create user's own config {user:'', pass:''}
+//please create user's own config file {user:'', pass:''} and import here
 const config = require('./config.js')
 const readline = require('readline-promise');
 const {
@@ -108,12 +108,14 @@ puppeteer.launch({
         }
 
         //save word list
-
+        
 
         //submit
         if (forgotten.length != 0) {
             await page.waitForSelector('#submit-spotcheck');
             await page.click('#submit-spotcheck');
+
+            await page.waitForNavigation()
         }
     }
 
