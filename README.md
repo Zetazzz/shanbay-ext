@@ -6,6 +6,6 @@ The Automation test tool puppeteer is used to interact with Shanbay website.
 
 Spot check can be done with this tool smoothly, and Webster dictionary can be checked for better review. And for words that has been checked by this program and marked memorized, they will not show for a while.
 
-####TODO list:
+#### TODO list:
 
 Save memorized words and don't show again for a while.
